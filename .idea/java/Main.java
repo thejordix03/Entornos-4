@@ -2,8 +2,15 @@ package com.company;
 
 import java.util.Scanner;
 
+/**
+ * Implementación de la Criba de Eratóstenes para encontrar números primos.
+ */
 public class Main {
 
+    /**
+     * Método principal que solicita un número al usuario y muestra los primos hasta ese valor.
+     * @param args Argumentos de la línea de comandos (no se usan en este programa).
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -21,6 +28,11 @@ public class Main {
         scanner.close();
     }
 
+    /**
+     * Aplica la Criba de Eratóstenes para encontrar todos los números primos hasta un máximo dado.
+     * @param max El número hasta el cual se encontrarán los primos.
+     * @return Un array con los números primos encontrados.
+     */
     public static int[] sieveOfEratosthenes(int max) {
         if (max < 2) return new int[0];
 
